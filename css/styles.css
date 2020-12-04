@@ -165,14 +165,22 @@ img {
 /* ======================== END OF HEADER ========================= */
 
 /* ======================== HERO ========================= */
+
 .hero-section {
   background-color: var(--secondary-background-color);
   color: var(--primary-white-color);
-}
-
-.hero-section .section {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/hero-banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: 0 auto;
 }
 
 .hero-section .container {
@@ -348,12 +356,11 @@ img {
 .page-footer .wrapper {
   outline: 1px solid #fff;
   margin-right: 70px;
-  align-items: center;
 }
 
 .page-footer .container {
   display: flex;
-  justify-content: center;
+  align-items: baseline;
 }
 
 .page-footer .logo {

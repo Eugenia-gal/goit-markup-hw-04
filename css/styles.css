@@ -286,6 +286,8 @@ img {
 .our-team-section .item {
   text-align: center;
   background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -343,9 +345,19 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.page-footer .wrapper {
+  outline: 1px solid #fff;
+  margin-right: 70px;
+  align-items: center;
+}
+
+.page-footer .container {
+  display: flex;
+  justify-content: center;
+}
 
 .page-footer .logo {
-  color: #ffffff;
+  color: var(--primary-white-color);
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -365,7 +377,32 @@ img {
 }
 
 .page-footer .address .map-link {
-  color: #ffffff;
+  color: var(--primary-white-color);
+}
+
+/* .social-link.wrapper {
+  display: flex;
+  flex-direction: column;
+  jastify-content: center;
+} */
+
+.page-footer .invitation {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.social-link .list {
+  display: flex;
+}
+
+.social-link .item {
+  width: 44px;
+  height: 44px;
+  outline: var(--primary-white-color);
 }
 
 /* ======================== END OF FOOTER ========================= */
@@ -424,6 +461,12 @@ img {
 .work-examples .item {
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.work-examples .item:hover,
+.work-examples .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .work-examples .wrapper {

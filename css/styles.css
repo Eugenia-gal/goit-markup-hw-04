@@ -1,0 +1,426 @@
+:root {
+  --primary-white-color: #ffffff;
+  --secondary-background-color: #2f303a;
+  --accent-background-color: #f5f4fa;
+  --accent-color: #2196f3;
+
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+}
+
+/* ======================== COMMON ========================= */
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+img {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ======================== END OF COMMON ========================= */
+
+/* ======================== HEADER ========================= */
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+  min-height: 80px;
+}
+
+.page-header .container {
+  display: flex;
+  align-items: center;
+}
+
+.page-header .link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.page-header .item + .item {
+  margin-left: 50px;
+}
+
+.page-header .list {
+  display: flex;
+  align-items: center;
+}
+
+/* logo */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--accent-color);
+}
+
+.page-header .logo {
+  margin-right: 93px;
+  color: #000000;
+}
+
+/* site-nav */
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav-list .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.current-page {
+  color: var(--accent-color);
+}
+
+/* address */
+.page-header .address .link {
+  color: var(--secondary-text-color);
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.page-header .address .link:hover,
+.page-header .address .link:focus {
+  color: var(--accent-color);
+}
+
+.page-header .address {
+  margin-left: auto;
+}
+
+/* ======================== END OF HEADER ========================= */
+
+/* ======================== HERO ========================= */
+.hero-section {
+  background-color: var(--secondary-background-color);
+  color: var(--primary-white-color);
+}
+
+.hero-section .section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-section .container {
+  text-align: center;
+}
+
+.hero-section .title {
+  margin-bottom: 30px;
+
+  color: var(--primary-white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-section .button {
+  padding: 10px 32px;
+  border: none;
+  border-radius: 4px;
+  min-width: 200px;
+  cursor: pointer;
+
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+/* ======================== END OF HERO ========================= */
+
+/* ======================== ADVANTAGES ========================= */
+
+.advantages-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.advantages-section .list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-section .item {
+  width: calc(100% - (30px * 3) / 4);
+}
+
+.advantages-section .item + .item {
+  margin-left: 30px;
+}
+
+.section .paragraph {
+  font-size: 14px;
+  line-height: 1.13;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.section .description {
+  color: var(--secondary-text-color);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* ======================== END OF ADVANTAGES ========================= */
+
+/* ======================== ACTIVITY ========================= */
+.activity-section {
+  padding-bottom: 94px;
+}
+
+.activity-section .list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity-section .title {
+  margin-bottom: 50px;
+}
+
+.actitvity-section img {
+  display: inline-block;
+}
+
+/* ======================== END OF ACTIVITY ========================= */
+
+/* ======================== OUR TEAM ========================= */
+
+.our-team-bg-color {
+  background-color: var(--accent-background-color);
+}
+.our-team-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.our-team-section .title {
+  margin-bottom: 50px;
+}
+.our-team-section .list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-team-section .item {
+  text-align: center;
+  background-color: var(--primary-white-color);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.our-team-section .employee-wrapper {
+  padding: 30px 0px;
+}
+
+.section .employee-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.section .employee-position {
+  color: var(--secondary-text-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/* ======================== END OF OUR TEAM ========================= */
+
+/* ======================== FOOTER ========================= */
+
+.page-footer {
+  background-color: var(--secondary-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.page-footer .logo {
+  color: #ffffff;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.page-footer .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.page-footer .address .link {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.page-footer .address .map-link {
+  color: #ffffff;
+}
+
+/* ======================== END OF FOOTER ========================= */
+
+/* _________________________ PORTFOLIO PAGE _______________________ */
+
+/* ======================== OUR WORKS ====================== */
+
+.our-works-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-list .button {
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+  min-width: 73px;
+  cursor: pointer;
+
+  background-color: var(--accent-background-color);
+  color: var(--primary-text-color);
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.filter-list .button:hover,
+.filter-list .button:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  outline: none;
+}
+
+.filter-list .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.work-examples {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.work-examples .item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.work-examples .wrapper {
+  padding: 20px 24px 19px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.work-examples .title {
+  font-size: 18px;
+  line-height: 2;
+  text-align: left;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.work-examples .description {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+}
+
+/* ======================== OUR WORKS ====================== */

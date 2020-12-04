@@ -56,6 +56,11 @@ img {
   overflow: hidden;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section .title {
   font-weight: 700;
   font-size: 36px;
@@ -208,11 +213,6 @@ img {
 
 /* ======================== ADVANTAGES ========================= */
 
-.advantages-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .advantages-section .list {
   display: flex;
   justify-content: space-between;
@@ -247,7 +247,7 @@ img {
 
 /* ======================== ACTIVITY ========================= */
 .activity-section {
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 
 .activity-section .list {
@@ -311,6 +311,30 @@ img {
 }
 
 /* ======================== END OF OUR TEAM ========================= */
+
+/* ======================== CLIENTS ========================= */
+
+.clients .title {
+  margin-bottom: 50px;
+}
+
+.clients .list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients .link {
+  display: block;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* ======================== END OF CLIENTS ========================= */
 
 /* ======================== FOOTER ========================= */
 

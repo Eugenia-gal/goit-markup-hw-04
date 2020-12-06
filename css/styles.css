@@ -6,6 +6,7 @@
 
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
+  --primary-icon-color: #afb1b8;
 }
 
 /* ======================== COMMON ========================= */
@@ -158,7 +159,8 @@ img {
   align-items: center;
 }
 
-/* adding icons using a pseudo element ::before*/
+/* adding icons using a pseudo element ::before
+
 .address .link::before {
   content: '';
 
@@ -179,7 +181,22 @@ img {
   width: 10px;
   height: 16px;
 }
-/* end of icon properties */
+end of icon properties */
+
+.address .icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.mail .icon {
+  width: 16px;
+  height: 12px;
+}
+
+.smartphone .icon {
+  width: 10px;
+  height: 16px;
+}
 
 .page-header .address .link:hover,
 .page-header .address .link:focus {
@@ -262,7 +279,8 @@ img {
   margin-left: 30px;
 }
 
-/* adding icons using a pseudo element ::before */
+/* adding icons using a pseudo element ::before
+
 .advantages-section .item::before {
   content: '';
   display: block;
@@ -290,7 +308,23 @@ img {
   background-image: url(../images/SVG/astronaut.svg);
 }
 
-/* end of icon properties */
+end of icon properties */
+
+.advantages-section .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--accent-background-color);
+  border-radius: 4px;
+}
+
+.advantages-section .icon {
+  width: 70px;
+  height: 70px;
+}
 
 .section .paragraph {
   font-size: 14px;
@@ -349,7 +383,7 @@ img {
   justify-content: space-between;
 }
 
-.our-team-section .item {
+.card > .item {
   text-align: center;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -380,7 +414,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-/* adding icons using background-image of link */
+/* adding icons using background-image of link
 
 .social-links-list.list {
   justify-content: center;
@@ -424,7 +458,34 @@ img {
   background-color: var(--accent-color);
 }
 
-/* end of social links properties*/
+end of social links properties*/
+
+.social-links-list.list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links-list .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-links-list .link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  color: var(--primary-icon-color);
+  border-radius: 50%;
+}
+
+.social-links-list .link:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+.social-links-list .icon {
+  margin: auto;
+  fill: currentColor;
+}
 
 /* ======================== END OF OUR TEAM ===================*/
 
@@ -439,7 +500,7 @@ img {
   justify-content: center;
 }
 
-/* adding icons using background-image of link */
+/* adding icons using background-image of link
 
 .clients .link {
   display: block;
@@ -485,7 +546,31 @@ img {
   background-size: 88.48px 45.44px;
 }
 
-/* end of client links properties*/
+ end of client links properties*/
+
+.clients .link {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--primary-icon-color);
+  border-radius: 4px;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--primary-icon-color);
+}
+.clients .link:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.clients .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients .icon {
+  fill: currentColor;
+  margin: auto;
+}
 
 /* ======================== END OF CLIENTS ===================*/
 
@@ -496,7 +581,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.page-footer .wrapper {
+.page-footer .wrapper:not(:last-child) {
   margin-right: 70px;
 }
 
@@ -527,6 +612,7 @@ img {
 
 .page-footer .address .map-link {
   color: var(--primary-white-color);
+  width: 231px;
 }
 
 .page-footer .invitation {
@@ -540,6 +626,18 @@ img {
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
+
+.page-footer .link.icon {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--primary-white-color);
+}
+
+.page-footer .link.icon:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+/* adding icons using background-image of link
 
 .social-link .list {
   display: flex;
@@ -561,6 +659,8 @@ img {
   background-size: 20px;
   border-radius: 50%;
 }
+
+ end of client links properties*/
 
 /* ======================== END OF FOOTER ========================= *
 

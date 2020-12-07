@@ -144,7 +144,20 @@ img {
 }
 
 /* address */
+
+.page-header .address {
+  margin-left: auto;
+}
+
+.page-header .address .link:hover,
+.page-header .address .link:focus {
+  color: var(--accent-color);
+}
+
 .page-header .address .link {
+  display: inline-flex;
+  align-items: center;
+
   color: var(--secondary-text-color);
 
   font-style: normal;
@@ -153,35 +166,6 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
-.address .link {
-  display: inline-flex;
-  align-items: center;
-}
-
-/* adding icons using a pseudo element ::before
-
-.address .link::before {
-  content: '';
-
-  margin-right: 10px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.mail::before {
-  background-image: url(../images/SVG/envelope.svg);
-  width: 16px;
-  height: 12px;
-}
-
-.smartphone::before {
-  background-image: url(../images/SVG/smartphone.svg);
-  width: 10px;
-  height: 16px;
-}
-end of icon properties */
 
 .address .icon {
   margin-right: 10px;
@@ -196,15 +180,6 @@ end of icon properties */
 .smartphone .icon {
   width: 10px;
   height: 16px;
-}
-
-.page-header .address .link:hover,
-.page-header .address .link:focus {
-  color: var(--accent-color);
-}
-
-.page-header .address {
-  margin-left: auto;
 }
 
 /* ======================== END OF HEADER ========================= */
@@ -279,37 +254,6 @@ end of icon properties */
   margin-left: 30px;
 }
 
-/* adding icons using a pseudo element ::before
-
-.advantages-section .item::before {
-  content: '';
-  display: block;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: var(--accent-background-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70px 70px;
-}
-
-.icon-antenna::before {
-  background-image: url(../images/SVG/antenna.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/SVG/clock.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/SVG/diagram.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/SVG/astronaut.svg);
-}
-
-end of icon properties */
-
 .advantages-section .wrapper {
   display: flex;
   justify-content: center;
@@ -359,10 +303,6 @@ end of icon properties */
   margin-bottom: 50px;
 }
 
-.actitvity-section img {
-  display: inline-block;
-}
-
 /* ======================== END OF ACTIVITY ========================= */
 
 /* ======================== OUR TEAM ========================= */
@@ -391,11 +331,11 @@ end of icon properties */
   border-radius: 0px 0px 4px 4px;
 }
 
-.our-team-section .employee-wrapper {
+.card .wrapper {
   padding: 30px 0px;
 }
 
-.section .employee-name {
+.card .name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -403,7 +343,7 @@ end of icon properties */
   margin-bottom: 10px;
 }
 
-.section .employee-position {
+.card .position {
   color: var(--secondary-text-color);
 
   margin-bottom: 16px;
@@ -414,62 +354,16 @@ end of icon properties */
   letter-spacing: 0.03em;
 }
 
-/* adding icons using background-image of link
-
-.social-links-list.list {
-  justify-content: center;
-}
-
-.social-links-list .item:not(:last-child) {
-  margin-right: 10px;
-}
-.social-links-list .item {
-  box-shadow: none;
-}
-
-.social-links-list .link {
-  display: block;
-  width: 44px;
-  height: 44px;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px;
-  border-radius: 50%;
-}
-
-.icon-instagram {
-  background-image: url(../images/SVG/instagram.svg);
-}
-
-.icon-twitter {
-  background-image: url(../images/SVG/twitter.svg);
-}
-.icon-facebook {
-  background-image: url(../images/SVG/facebook.svg);
-}
-
-.icon-linkedin {
-  background-image: url(../images/SVG/linkedin.svg);
-}
-
-.social-links-list .link:hover,
-.social-links-list .linl:focus {
-  background-color: var(--accent-color);
-}
-
-end of social links properties*/
-
-.social-links-list.list {
+.social-links.list {
   display: flex;
   justify-content: center;
 }
 
-.social-links-list .item:not(:last-child) {
+.social-links .item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-links-list .link {
+.social-links .link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -477,12 +371,12 @@ end of social links properties*/
   border-radius: 50%;
 }
 
-.social-links-list .link:hover {
+.social-links .link:hover {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
 
-.social-links-list .icon {
+.social-links .icon {
   margin: auto;
   fill: currentColor;
 }
@@ -499,54 +393,6 @@ end of social links properties*/
   display: flex;
   justify-content: center;
 }
-
-/* adding icons using background-image of link
-
-.clients .link {
-  display: block;
-  width: 170px;
-  height: 90px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.clients .item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.icon-logo-1 {
-  background-image: url(../images/SVG/logo-1.svg);
-  background-size: 44.27px 49.23px;
-}
-
-.icon-logo-3 {
-  background-image: url(../images/SVG/logo-2.svg);
-  background-size: 40px 52px;
-}
-
-.icon-logo-4 {
-  background-image: url(../images/SVG/logo-3.svg);
-  background-size: 41px 42.6px;
-}
-
-.icon-logo-5 {
-  background-image: url(../images/SVG/logo-4.svg);
-  background-size: 79.66px 42.02px;
-}
-
-.icon-logo-6 {
-  background-image: url(../images/SVG/logo-5.svg);
-  background-size: 59px 47px;
-}
-
-.icon-logo-2 {
-  background-image: url(../images/SVG/logo-6.svg);
-  background-size: 88.48px 45.44px;
-}
-
- end of client links properties*/
 
 .clients .link {
   display: flex;
@@ -636,31 +482,6 @@ end of social links properties*/
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
-
-/* adding icons using background-image of link
-
-.social-link .list {
-  display: flex;
-}
-
-.social-link .item {
-  width: 44px;
-  height: 44px;
-}
-
-.social-links-list .link {
-  display: block;
-  width: 44px;
-  height: 44px;
-
-  background-color: rgba(255, 255, 255, 10%);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px;
-  border-radius: 50%;
-}
-
- end of client links properties*/
 
 /* ======================== END OF FOOTER ========================= *
 
